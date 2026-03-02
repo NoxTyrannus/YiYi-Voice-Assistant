@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YiYi智能助手</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container {
+      text-align: center;
+      max-width: 400px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+    
+    .subtitle {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+    
+    .status {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px 30px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    .hint {
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: 20px;
+    }
+    
+    .icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🎤</div>
+    <h1>YiYi</h1>
+    <p class="subtitle">智能语音助手</p>
+    
+    <div class="status">
+      ✓ 运行中，随时待命
+    </div>
+    
+    <p class="hint">说"YiYi"唤醒我</p>
+  </div>
+</body>
+</html>
