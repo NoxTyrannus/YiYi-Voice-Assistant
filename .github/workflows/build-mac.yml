@@ -20,13 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd YiYi
           npm install
           npm install --save-dev electron-builder
 
       - name: Build DMG
         run: |
-          cd YiYi
           npm run build
           npm run build:mac
         env:
@@ -36,5 +34,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: YiYi-macOS-DMG
-          path: YiYi/dist/YiYi-1.0.0.dmg
+          path: dist/YiYi-1.0.0.dmg
           retention-days: 30
